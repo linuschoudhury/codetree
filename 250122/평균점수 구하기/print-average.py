@@ -1,0 +1,5 @@
+arr=list(map(float,input().split()))
+#print(arr)
+total=sum(arr)
+avg=total/len(arr)
+print("%.1f"%avg)
