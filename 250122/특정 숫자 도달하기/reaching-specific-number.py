@@ -8,4 +8,4 @@ for i in range(len(arr)):
         count+=1
     else:
         break
-print(sum,sum/count)
+print('%d %.1f'%(sum,sum/count))
