@@ -1,7 +1,13 @@
-arr=input().split()
-a,b=int(arr[0]),int(arr[1])
-terms = [a, b]
-for i in range(2, 11):
+arr=list(map(int,input().split()))
+
+for i in range(2,11):
+    arr.append(arr[i-1]+2*arr[i-2])
+
+for j in range(10):
+    print(arr[j],end=' ')
+
+'''
+terms = [a1, a2]
+for i in range(2, n):
     terms.append(terms[i-1] + 2*terms[i-2])
-for i in range(10):
-    print(terms[i],end=' ')
+'''
