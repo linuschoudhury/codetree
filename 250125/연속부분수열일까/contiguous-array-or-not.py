@@ -1,16 +1,15 @@
 n1,n2=map(int,input().split())
 A=list(map(int,input().split()))
 B=list(map(int,input().split()))
-count=0
-if B[0] in A:
-    start=A.index(B[0])
-    for i in range(start,start+len(B)):
-        if A[i]==B[i-start]:
-            count+=1
-        else:
-            break
-        #print(B[])
-if count==len(B):
+intA=0
+intB=0
+for i in range(len(A)):
+    intA=intA*10+A[i]
+for i in range(len(B)):
+    intB=intB*10+B[i]
+strA=str(intA)
+strB=str(intB)
+if strB in strA:
     print('Yes')
 else:
     print('No')
