@@ -12,12 +12,12 @@ for j in range(m):
             #print(cnt)
             cnt+=1
     else:
-        cnt+=3
-        for i in range(n):
+        #cnt+=n-1
+        for i in range(n-1,-1,-1):
             arr[i][j]=cnt
             #print(('(%d,%d)'%(i,j)),end=' ')
             #print(cnt)
-            cnt-=1
+            cnt+=1
 #print(arr)
 for i in range(n):
     for j in range(m):
