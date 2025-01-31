@@ -4,7 +4,7 @@ try:
         word = list(word)
         try:
             pos = int(input())
-            if pos <= len(word):
+            if pos < len(word):
                 word.pop(pos)
             else:
                 word.pop(len(word)-1)
