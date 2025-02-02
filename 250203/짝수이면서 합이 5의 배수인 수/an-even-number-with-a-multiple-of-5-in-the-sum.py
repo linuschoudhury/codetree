@@ -9,5 +9,5 @@ def by5(a):
     else:
         result='No'
     return result
-by5(n)
+print(by5(n))
     
