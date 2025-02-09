@@ -6,7 +6,7 @@ b = list(map(int, input().split()))
 def sublist(x,y):
     matched=False
     for i in range(len(a)):
-        if b[0]==a[i]:
+        if b[0]==a[i] and len(a)>=i+len(b):
             matched=True
             for j in range(len(b)):
                 if b[j]!=a[i+j]:
