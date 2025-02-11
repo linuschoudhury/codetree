@@ -8,7 +8,7 @@ def whatever(A):
     j=m+1
     while m>=1:
         total+=A[m-1]
-        print(m)
+        #print(m)
         if m%2!=0:
             m-=1
         else:
