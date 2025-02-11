@@ -14,6 +14,8 @@ def findpos():
                 if pattern[j]!=text[i+j]:
                     sub=False
                     break
+            if sub==True:
+                break
     return pos
 print(findpos())
         
