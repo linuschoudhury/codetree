@@ -13,6 +13,7 @@ def findpos():
             for j in range(len(pattern)):
                 if pattern[j]!=text[i+j]:
                     sub=False
+                    pos=-1
                     break
             if sub==True:
                 break
