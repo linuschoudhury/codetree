@@ -5,4 +5,4 @@ def printstars(n):
     print('* '*n)
     printstars(n-1)
     print('* '*n)
-printstars(5)
+printstars(n)
