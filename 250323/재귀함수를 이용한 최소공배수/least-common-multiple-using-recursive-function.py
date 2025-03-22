@@ -9,6 +9,8 @@ def gcd(a,b):
 def twonumbers(a,b):
     return abs(a*b)/gcd(a,b)
 def recursivelcm(arr):
+    if len(arr)==1:
+        return arr[0]
     if len(arr)==2:
         return twonumbers(arr[0],arr[1])
     return twonumbers(arr[0],recursivelcm(arr[1:]))
