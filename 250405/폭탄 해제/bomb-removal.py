@@ -8,5 +8,6 @@ class Bomb:
         self.wire_color=wire_color
         self.seconds=seconds
 bomb1=Bomb(unlock_code,wire_color,seconds)
-print('Code: ',bomb1.unlock_code)
-print('Code: ',bomb1.unlock_code)
+print('code :',bomb1.unlock_code)
+print('color :',bomb1.wire_color)
+print('second :',bomb1.seconds)
