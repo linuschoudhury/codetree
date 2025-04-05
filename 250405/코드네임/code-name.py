@@ -12,5 +12,10 @@ class Score:
     def __init__(self,codename,score): 
         self.codename=codename
         self.score=score
-score1=Score(codenames[0],scores[0])
+smallestindex=0
+for i in range(5):
+    if scores[i]<scores[smallestindex]:
+        smallestindex=i
+
+score1=Score(codenames[smallestindex],scores[smallestindex])
 print(score1.codename, score1.score)
