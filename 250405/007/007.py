@@ -7,7 +7,7 @@ class Ramen:
         self.secret_code=secret_code
         self.meeting_point=meeting_point
         self.time=time
-ramen1=Ramen('codetree','L',13)
+ramen1=Ramen(secret_code,meeting_point,time)
 print("secret code :",ramen1.secret_code)
 print("meeting point :",ramen1.meeting_point)
 print("time :",ramen1.time)
