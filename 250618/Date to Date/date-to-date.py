@@ -9,4 +9,5 @@ daydiff=d2-d1
 monthdiff=0
 for i in range(m1-1,m2-1):
     monthdiff+=num_of_days[i]
-print(daydiff+monthdiff)
+result=max(daydiff+monthdiff,1)
+print(result)
