@@ -4,14 +4,14 @@ m1, d1, m2, d2 = map(int, input().split())
 
 numberofdays=[0,31,28,31,30,31,30,31,31,30,31,30,31]
 days=0
-m2=m2%12
-for i in range (5,m2):
-    days+=numberofdays[i]
-    #print(numberofdays[i])
 
-daysfromdate=d2-4
-days+=daysfromdate
+for i in range (1,m2):
+    days+=numberofdays[i]
+    
+
+daysfromdate=d2-d1
+#days+=daysfromdate
 #print(days)
-weekdays=['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+weekdays=['Sat','Sun','Mon','Tue','Wed','Thu','Fri']
 days=days%7
 print(weekdays[days])
