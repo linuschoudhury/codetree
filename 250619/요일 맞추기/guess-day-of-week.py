@@ -11,8 +11,8 @@ for i in range (m1,m2):
 
 daysfromdate=d2-d1
 days+=daysfromdate
-
+print(days)
 weekdays=['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
 days=days%7
-
+print(days)
 print(weekdays[days])
