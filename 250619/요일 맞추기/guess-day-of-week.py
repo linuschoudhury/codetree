@@ -6,7 +6,7 @@ numberofdays=[0,31,28,31,30,31,30,31,31,30,31,30,31]
 days=0
 for i in range (m1,m2):
     days+=numberofdays[i]
-    print(numberofdays[i])
+    #print(numberofdays[i])
 
 daysfromdate=d2-d1
 days+=daysfromdate
