@@ -4,19 +4,22 @@ A = input()
 # Please write your code here.
 numberofdays=[0,31,28,31,30,31,30,31,31,30,31,30,31]
 days=0
-if m1<=m2:
-    for i in range (m1,m2):
-        #print(numberofdays[i])
+if m1==m2:
+    days=d2-d1
+else:
+    
+    for i in range(m1,m2):
         days+=numberofdays[i]
-else:
-    days=0 
-days+=d2-d1
+    days+=d2-d1
 #print(days)
-weekdays=['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
-thisday=days%7
-days=days//7
-if weekdays[thisday]==A:
-    print(days+1)
+days+=1
+weekday=['Mon','Tue','Wed','Thu','Fri','Sat','Sun']
+#print(weekday[days%7])
+#for i in range(days):
+    #print(weekday[i%7])
+if days%7==1:
+    print((days//7)+1)
+    #print('fuck')
 else:
-    print(days)
-#print(weekdays[days])
+    print((days//7))
+
