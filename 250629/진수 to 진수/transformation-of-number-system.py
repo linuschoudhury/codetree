@@ -15,7 +15,7 @@ while n>0:
 #print(total)
 fintotal=[]
 while total>0:
-    c=total%2
+    c=total%b
     fintotal.append(str(c))
-    total=total//2
+    total=total//b
 print(''.join(reversed(fintotal)))
