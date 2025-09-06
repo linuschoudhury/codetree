@@ -24,7 +24,7 @@ for num, direction in commands:
         # paint current tile
         if curr not in tiles:
             tiles[curr] = {'w': 0, 'b': 0, 'last': None}
-        if color == 'W':
+        if direction == 'L':
             tiles[curr]['w'] += 1
         else:
             tiles[curr]['b'] += 1
