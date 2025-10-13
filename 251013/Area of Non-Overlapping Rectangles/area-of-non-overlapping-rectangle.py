@@ -20,4 +20,4 @@ for i in range(3):
 a,b,m=rects
 onlyA=a-m
 onlyB=b-m
-print(len(onlyA)+len(onlyB))
+print(len(onlyA|onlyB))
