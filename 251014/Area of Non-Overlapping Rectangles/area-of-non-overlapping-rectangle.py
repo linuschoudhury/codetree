@@ -19,6 +19,6 @@ for i in range(3):
             t=tuple((j,k))
             dic[t]=i
             
-count = sum(1 for v in dic.values() if v == 0)+sum(1 for v in dic.values() if v == 2)
+count = sum(1 for v in dic.values() if v == 0)+sum(1 for v in dic.values() if v == 1)
 
 print(count)
