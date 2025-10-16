@@ -7,6 +7,8 @@ for i in range(len(student)):
     A[student[i]]+=1
     if A[student[i]]==K:
         break
+else:
+    print(-1)
 print(student[i])
 
 
