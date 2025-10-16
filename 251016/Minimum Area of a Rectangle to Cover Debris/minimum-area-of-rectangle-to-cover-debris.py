@@ -18,15 +18,19 @@ for i in range(min(x1_1,x2_1),max(x1_1,x2_1)):
         checked[i][j]=2
 min_x,min_y=2001,2001
 max_x,max_y=0,0
+overlapped=False
 for i in range(len(checked)):
     for j in range(len(checked[i])):
         if checked[i][j]==1:
+            overlapped=True
             min_x=min(i,min_x)
             max_x=max(i,max_x)
             min_y=min(j,min_y)
             max_y=max(j,max_y)
-
-print(((max_x-min_x)+1)*((max_y-min_y)+1))
+if overlapped==True: 
+    print(((max_x-min_x)+1)*((max_y-min_y)+1))
+else:
+    print(0)
 
 
 
