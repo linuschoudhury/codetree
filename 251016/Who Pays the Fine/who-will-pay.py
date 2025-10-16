@@ -6,10 +6,11 @@ A=[0]*(N+1)
 for i in range(len(student)):
     A[student[i]]+=1
     if A[student[i]]==K:
+        print(student[i])
         break
 else:
     print(-1)
-print(student[i])
+
 
 
 
