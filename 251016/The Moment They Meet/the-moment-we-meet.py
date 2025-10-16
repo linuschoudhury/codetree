@@ -43,5 +43,7 @@ for i in range(totalTa):
     if A[i]==B[i]:
         print(i+1)
         break
+else:
+    print(-1)
 
 
