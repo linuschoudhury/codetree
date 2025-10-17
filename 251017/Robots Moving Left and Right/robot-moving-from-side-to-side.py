@@ -18,38 +18,34 @@ for _ in range(m):
 
 # Please write your code here.
 time=max(sum(t),sum(t_b))
-A=[]
-B=[]
+remA=t[0]
+remB=t_b[0]
 posA,posB=0,0
-for i in range(n):
-    if d[i]=='L':
-        for j in range(t[i]):
-            posA-=1
-            A.append(posA)
-    else:
-        for j in range(t[i]):
-            posA+=1
-            A.append(posA)
-for i in range(m):
-    if d_b[i]=='L':
-        for j in range(t_b[i]):
-            posB-=1
-            B.append(posB)
-    else:
-        for j in range(t_b[i]):
-            posB+=1
-            B.append(posB)
-
-for i in range(time):
-    if sum(t)<time:
-        for j in range(sum(t),time):
-            A.append(A[-1])
-    elif sum(t_b)<time:
-        for j in range(sum(t_b),time):
-            B.append(B[-1])  
+i=j=0
 count=0
-for i in range(1,time):
-    if A[i-1]!=B[i-1] and A[i]==B[i]:
+for _ in range(time):
+    prevA,prevB=posA,posB
+    if i<n:
+        if d[i]=='L':
+            posA-=1
+        else:
+            posA+=1
+        remA-=1
+        if remA==0:
+            i+=1
+            if i<n:
+                remA=t[i]
+    if j<m:
+        if d_b[j]=='L':
+            posB-=1
+        else:
+            posB+=1
+        remB-=1
+        if remB==0:
+            j+=1
+            if j<m:
+                remB=t_b[j]
+    
+    if prevA!=prevB and posA==posB:
         count+=1
-print(count)   
-
+print(count)
