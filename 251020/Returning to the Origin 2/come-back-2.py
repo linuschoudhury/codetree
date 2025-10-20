@@ -11,7 +11,7 @@ for i in range(len(commands)):
     if commands[i]=='L':
         pointing=(pointing-1)%4
         count+=1
-    if commands[i]=='R':
+    elif commands[i]=='R':
         pointing=(pointing+1)%4
         count+=1
     else:
