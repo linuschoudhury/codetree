@@ -8,6 +8,7 @@ dy=[1,0,-1,0]
 dir_dict={'N':0,'E':1,'S':2,'W':3}
 x=y=0
 count=0
+found=False
 for i in range(N):
     dir_num=dir_dict[dir[i]]
     for j in range(dist[i]):
@@ -16,7 +17,11 @@ for i in range(N):
         count+=1
         if x==0 and y==0:
             print(count)
+            found=True
             break
+if not found:
+    print(-1)
+
     
 
 
