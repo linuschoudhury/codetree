@@ -10,6 +10,8 @@ x=y=0
 count=0
 found=False
 for i in range(N):
+    if found:
+        break
     dir_num=dir_dict[dir[i]]
     for j in range(dist[i]):
         x+=dx[dir_num]
