@@ -17,7 +17,7 @@ elif side==2:
     dr,dc=-1,0
 else:
     r,c=n-1-pos,-1
-    dr=0,1
+    dr,dc=0,1
 reflections=0
 while True:
     r+=dr
