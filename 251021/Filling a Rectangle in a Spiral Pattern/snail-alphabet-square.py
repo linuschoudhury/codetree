@@ -18,7 +18,10 @@ for i in range(n*m-1):
         dir_num=(dir_num+1)%4
     r=r+dr[dir_num]
     c=c+dc[dir_num]
-    grid[r][c]=chr(A+i+1)
+    count+=1
+    if count==26:
+        count=0
+    grid[r][c]=chr(A+count)
 for i in range(n):
     for j in range(m):
         print(grid[i][j],end=' ')
