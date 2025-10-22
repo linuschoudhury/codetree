@@ -4,11 +4,11 @@ grid = [list(input().split()) for _ in range(R)]
 # Please write your code here.
 currx=curry=0
 count=0
-for i in range(currx+1,R-1):
-    for j in range(curry+1,C-1):
-        if grid[i][j]!=grid[currx][curry]:
-            count+=1
-            currx=i
-            curry=j
+for i in range(0,R):
+    for j in range(0,C):
+        for k in range(i+1,R-1):
+            for l in range(j+1,C-1):
+                if grid[0][0]!=grid[i][j] and grid[i][j]!=grid[k][l] and grid[k][l]!=grid[R-1][C-1]:
+                    count+=1
 print(count)
         
