@@ -2,21 +2,22 @@ a = input()
 
 # Please write your code here.
 size=len(a)
-b=list(a)
+b=[]
+for num in a:
+    b.append(int(num))
+total=[]
+
 for i in range(size):
-    b[i]=int(b[i])
-for i in range(size):
+    dec=0
+    temp=b[i]
     if b[i]==0:
         b[i]=1
-        break
-total=0
-a=int(a)
-nozero=True
-for i in range(size):
-    if b[i]==0:
-        nozero=False
-if nozero==True:
-    b[-1]=0
-for i in range(size):
-    total+=(b[i]*(2**(size-i-1)))
-print(total)
+    else:
+        b[i]=0
+    for j in range(size):
+        dec+=b[j]*(2**(size-j-1))
+    total.append(dec)
+    b[i]=temp
+print(max(total))
+
+    
