@@ -11,7 +11,12 @@ for i in range(size):
         break
 total=0
 a=int(a)
+nozero=True
+for i in range(size):
+    if b[i]==0:
+        nozero=False
+if nozero==True:
+    b[-1]=0
 for i in range(size):
     total+=(b[i]*(2**(size-i-1)))
-
 print(total)
