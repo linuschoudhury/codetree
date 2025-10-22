@@ -4,14 +4,14 @@ x = [p[0] for p in points]
 y = [p[1] for p in points]
 
 # Please write your code here.
-dist=[]
+import sys
+mindist = sys.maxsize
 
-for i in range(1,n):
-    total=0
-    for j in range(1,n):
-        if i!=j:
-            total+=abs(points[i][0]-points[i-1][0])+abs(points[i][1]-points[i-1][1])
-    dist.append(total)
-print(min(dist[1:-1]))
-  
 
+for j in range(1,len(points)-1):
+    path=points[:j]+points[j+1:]
+    dist = 0
+    for k in range(len(path)-1):
+        dist=dist+(abs(path[k][0]-path[k+1][0])+abs(path[k][1]-path[k+1][1]))
+    mindist=min(dist,mindist)
+print(mindist)
