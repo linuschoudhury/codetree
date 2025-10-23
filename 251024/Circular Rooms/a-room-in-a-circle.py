@@ -8,7 +8,7 @@ for i in range(n):
     for j in range(n):
         
         if j!=i:
-            steps=(j-i)%5
+            steps=(j-i)%n
             prod+=abs(a[j]*steps)
     dist.append(prod)
 print(min(dist))
