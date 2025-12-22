@@ -12,10 +12,10 @@ for row1 in range(1,R-2):
             continue
         #for second jump
         for row2 in range(row1+1,R-1):
-            for column2 in range(column1,R-2):
+            for column2 in range(column1+1,C-1):
                 if grid[row1][column1]==grid[row2][column2]:
                     continue
-                else:
+                if grid[row2][column2] != endcolor:
                     validpaths+=1
 print(validpaths)
 
